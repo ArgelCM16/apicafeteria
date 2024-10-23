@@ -5,7 +5,6 @@ const Reservation = require('./models/reservation'); // Cambia a la ruta correct
 const Coffee = require('./models/coffee'); // Cambia a la ruta correcta
 
 const cors = require('cors');
-app.use(cors());
 
 
 
@@ -14,6 +13,7 @@ const port = process.env.PORT || 3000;
 
 
 // Middleware para parsear JSON
+app.use(cors());
 app.use(express.json());
 
 // Conectar a MongoDB Atlas
