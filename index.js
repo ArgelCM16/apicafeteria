@@ -4,6 +4,10 @@ const User = require('./models/user'); // Asegúrate de que esta ruta sea correc
 const Reservation = require('./models/reservation'); // Cambia a la ruta correcta
 const Coffee = require('./models/coffee'); // Cambia a la ruta correcta
 
+const cors = require('cors');
+app.use(cors());
+
+
 
 const app = express();
 const port = process.env.PORT || 3000;
